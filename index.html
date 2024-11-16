@@ -6,8 +6,6 @@
     <meta name="author" content="Alexander Langenwalter, Claire Philippides, Jade Hall, Kirby Dorsey, Mandy Johnson, Tracy Cantabrana, & Tressa Parkes">
     <title>Sunny Portal</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <!-- bootstrap CDN, 1/2 -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <!-- jquery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- font awesome CDN-->
@@ -18,81 +16,91 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- code for the sidebar starts here -->
-    <aside class="sidebar">
-        <div class="logo">
-            <!-- <img src="/images/sunnyLogo.PNG" alt="Sunny Portal Logo"> -->
-            <h2>Sunny Portal</h2>
-        </div>
-        <nav>
-            <a href="#dashboard"><i class="fa-solid fa-house"></i>Dashboard</a>
-            <a href="#monitoring"><i class="fa-solid fa-solar-panel"></i>Monitoring</a>
-            <a href="#analysis"><i class="fa-solid fa-chart-line"></i>Analysis</i></a>
-            <a href="#glossary"><i class="fa-solid fa-book-open-reader"></i>Solar 101</a>
-            <a href="#configuration"><i class="fa-solid fa-gears"></i>Configuration</a>
-        </nav>
-    </aside>
-    <!-- main content code starts here -->
-     <main>
-        <!-- code for the header starts here -->
-         <header>
-            <h1>Good Afternoon, Sadie</h1>
-            <div class="dashboardTitle">Dashboard - US123456789<i class="fa-solid fa-circle-chevron-down"></i></div>
-            <div class="headerIcons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-solid fa-circle-info"></i>
+    <!-- container class used to establish a wrapper to control the layout structure as a whole -->
+    <div class="container">
+        <!-- code for the sidebar starts here -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="/images/sunnyLogo.PNG" alt="Sunny Portal Logo">
+                <span>Sunny Portal</span>
             </div>
-         </header>
-        <!-- code for dashboard cards starts here -->
-         <section class="dashboardCards">
-            <div class="card deviceInfo">
-                <h2>Device Info & Panel Status</h2>
-                <!-- ADD CARD CONTENT -->
-            </div>
-            <div class="card weather">
-                <h2>Weather</h2>
-                <!-- ADD CARD CONTENT -->
-            </div>
-            <div class="card carbonAvoidance">
-                <h2>CO<sub>2</sub> Avoidance</h2>
-                <!-- ADD CARD CONTENT -->
-            </div>
-            <div class="card financialAnalysis">
-                <h2>Financial Analysis</h2>
-                <!-- ADD CARD CONTENT -->
-            </div>
-            <div class="card energyPower">
-                <h2>Energy & Power — PV</h2>
-                <!-- ADD CARD CONTENT -->
-            </div>
-         </section>
-     </main>
-    
-     <!--<div class="wrapper">
-        <div class="sidebar">
-            <h2>Sunny Portal</h2>
-            <ul>
-                <li><a href="#dashboard"><i class="fa-solid fa-house"></i>Dashboard</a></li>
-                <li><a href="#monitoring"><i class="fa-solid fa-solar-panel"></i>Monitoring</a></li>
-                <li><a href="#analysis"><i class="fa-solid fa-chart-line"></i>Analysis</i></a></li>
-                <li><a href="#glossary"><i class="fa-solid fa-book-open-reader"></i>Solar 101</a></li>
-                <li><a href="#configuration"><i class="fa-solid fa-gears"></i>Configuration</a></li>
-            </ul>
-        </div>
-        <div class="dashboard">
-            <div class="greeting"><p>Welcome, Sadie</p></div>
-            <div class="barIcons">
-                <ul>
-                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#notifications"><i class="fa-solid fa-bell"></i></a></li>
-                    <li><a href="information"><i class="fa-solid fa-circle-info"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-    <!-- bootstrap CDN, 2/2 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+            <nav>
+                <a href="#dashboard"><i class="fa-solid fa-house fa-2x"></i>Dashboard</a>
+                <a href="#monitoring"><i class="fa-solid fa-solar-panel fa-2x"></i>Monitoring</a>
+                <a href="#analysis"><i class="fa-solid fa-chart-line fa-2x"></i>Analysis</i></a>
+                <a href="#glossary"><i class="fa-solid fa-book-open-reader fa-2x"></i>Solar 101</a>
+                <a href="#configuration"><i class="fa-solid fa-gears fa-2x"></i>Configuration</a>
+            </nav>
+        </aside>
+
+        <!-- mainContent class used to establish the main content of the Sunny Portal website, specifically the dashboard -->
+         <main class="mainContent">
+            <!-- code for the header/banner starts here -->
+            <header class="header">
+                <div>
+                    <h2>Welcome, Sadie!</h2>
+                </div>
+                <div class="headerIcons">
+                    <span><i class="fa-solid fa-magnifying-glass fa-1x"></i></span>
+                    <span><i class="fa-solid fa-bell fa-1x"></i></span>
+                    <span><i class="fa-solid fa-circle-info fa-1x"></i></span>
+                </div>
+            </header>
+            <!-- code for the dashboard grid starts here -->
+             <div class="dashboardGrid">
+                <!-- code for the 'device info' card starts here -->
+                <div class="card">
+                    <div class="cardHeader">
+                        <h3 class="cardTitle">Device Info & Panel Status</h3>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                    </div>
+                    <div class="deviceInfo">
+                        <!-- ADD CONTENT HERE -->
+                    </div>
+                </div>
+                <!-- code for the 'weather' card starts here -->
+                 <div class="card">
+                    <div class="cardHeader">
+                        <h3 class="cardTitle">Weather</h3>
+                    </div>
+                    <div class="weatherInfo">
+                        <!-- ADD CONTENT HERE -->
+                    </div>
+                 </div>
+                 <!-- code for the 'co2 avoidance' card starts here -->
+                 <div class="card">
+                    <div class="cardHeader">
+                        <h3 class="cardTitle">CO<sub>2</sub> Avoidance</h3>
+                    </div>
+                    <div class="carbonStats">
+                        <!-- ADD CONTENT HERE -->
+                    </div>
+                 </div>
+                 <!-- code for the 'financial analysis' card starts here -->
+                 <div class="card">
+                    <div class="cardHeader">
+                        <h3 class="cardTitle">Financial Analysis</h3>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                    </div>
+                    <div class="moneyAnalysis">
+                        <!-- ADD CONTENT HERE -->
+                    </div>
+                 </div>
+                 <!-- code for the 'energy and power' card starts here -->
+                 <div class="card">
+                    <div class="cardHeader">
+                        <h3 class="cardTitle">Energy & Power — PV</h3>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                    </div>
+                    <div class="powerGauge">
+                        <!-- ADD CONTENT HERE -->
+                    </div>
+                 </div>
+             </div>
+         </main>
+    </div>
 </body>
     <script src="js/index.js"></script>
 </html>
+
+<!-- COMMENT COPY -->
